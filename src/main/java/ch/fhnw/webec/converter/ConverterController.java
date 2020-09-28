@@ -15,7 +15,7 @@ public class ConverterController {
     public ModelAndView convert(@RequestParam double inches) {
         final double result = inches * 2.54;
         final int cm = (int) result;
-        final int mm = (int)(10 * (result - cm));
+        final int mm = (int)Math.round(10 * (result - cm));
         final Map<String, Object> model = new HashMap<>();
         model.put("inches", inches);
         model.put("cm", cm);
