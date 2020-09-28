@@ -20,7 +20,7 @@ public class ConverterController {
         model.put("inches", inches);
         model.put("cm", cm);
         model.put("mm", mm);
-        return new ModelAndView("", model);
+        return new ModelAndView("ConverterOutput", model);
     }
 
 }
