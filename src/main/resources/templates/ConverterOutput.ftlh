@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-${inches} inches sind ${cm} cm und ${mm} mm.
+${feet} Feet und ${inches} Inches sind ${cm} cm und ${mm} mm.
 
 <a href="/">Zurück</a>
 </body>
