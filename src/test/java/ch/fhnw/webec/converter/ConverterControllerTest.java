@@ -52,7 +52,7 @@ class ConverterControllerTest {
         final ConverterController controller = new ConverterController();
 
         // when:
-        final ModelAndView result = controller.convert(null, 5.0);
+        final ModelAndView result = controller.convert(0.0, 5.0);
 
         // then:
         assertThat(result.getModel()).containsEntry("cm", 12);
@@ -65,7 +65,7 @@ class ConverterControllerTest {
         final ConverterController controller = new ConverterController();
 
         // when:
-        final ModelAndView result = controller.convert(11.0, null);
+        final ModelAndView result = controller.convert(11.0, 0.0);
 
         // then:
         assertThat(result.getModel()).containsEntry("cm", 335);
