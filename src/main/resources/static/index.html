@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <title>Converter</title>
     <meta name="description" content="Simple converter that demonstrates the MVC pattern">
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <form action="/convert" method="get">
+        <label for="feet">Feet: </label>
+        <input id="feet" name="feet" type="number">
+        <label for="inches">Inches: </label>
+        <input id="inches" name="inches" type="number">
+        <button type="submit">Senden</button>
+    </form>
 </body>
 </html>
